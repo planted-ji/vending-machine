@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vending Machine</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <img class="logo" src="img/logo.png" tabindex="0" alt="ColaCola" />
+      </h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="dr-list1">
+          <h2 class="a11y-hidden">음료 종류</h2>
+          <div tabindex="0" class="drink">
+            <img src="img/original_cola.png" alt="오리지널 콜라" />
+            <p class="dr-name">Original_Cola</p>
+            <p class="dr-price">1000원</p>
+          </div>
+          <div class="dr-soldout">
+            <img src="img/violet_cola.png" alt="보라색 콜라" />
+            <div class="soldout">
+              <p></p>
+              <img src="img/soldout.png" alt="품절" />
+            </div>
+            <p class="dr-name">Violet_Cola</p>
+            <p class="dr-price">1000원</p>
+          </div>
+          <div tabindex="0" class="drink">
+            <img src="img/yellow_cola.png" alt="노란색 콜라" />
+            <p class="dr-name">Yellow_Cola</p>
+            <p class="dr-price">1000원</p>
+          </div>
+          <div tabindex="0" class="drink">
+            <img src="img/cool_cola.png" alt="하늘색 콜라" />
+            <p class="dr-name">Cool_Cola</p>
+            <p class="dr-price">1000원</p>
+          </div>
+          <div tabindex="0" class="drink">
+            <img src="img/green_cola.png" alt="녹색 콜라" />
+            <p class="dr-name">Green_Cola</p>
+            <p class="dr-price">1000원</p>
+          </div>
+          <div tabindex="0" class="drink">
+            <img src="img/orange_cola.png" alt="주황색 콜라" />
+            <p class="dr-name">Orange_Cola</p>
+            <p class="dr-price">1000원</p>
+          </div>
+        </section>
+
+        <section class="dr-cal">
+          <h2 class="a11y-hidden">음료 값 계산</h2>
+          <div tabindex="0" class="dr-balance">
+            <p>잔액:</p>
+            <p>1,000원</p>
+          </div>
+          <button type="button">거스름돈 반환</button>
+          <form>
+            <input
+              class="enter-amount"
+              type="text"
+              placeholder="입금액 입력"
+              required
+            />
+          </form>
+          <button type="submit">입금</button>
+        </section>
+
+        <section class="dr-select">
+          <h2 class="a11y-hidden">선택한 음료</h2>
+          <div class="dr-list2">
+            <div class="scrollbar">
+              <div tabindex="0" class="drink2">
+                <img src="img/original_cola.png" alt="오리지널 콜라" />
+                <p class="dr-name">Original_Cola</p>
+                <p class="count">1</p>
+              </div>
+              <div tabindex="0" class="drink2">
+                <img src="img/green_cola.png" alt="녹색 콜라" />
+                <p class="dr-name">Green_Cola</p>
+                <p class="count">2</p>
+              </div>
+            </div>
+          </div>
+          <button type="button">획득</button>
+        </section>
+      </div>
+
+      <div class="container2">
+        <div class="my-money">
+          <div tabindex="0" class="money">
+            <p>소지금:</p>
+            <p>25,000원</p>
+          </div>
+        </div>
+
+        <section class="dr-get">
+          <h2>획득한 음료</h2>
+          <div class="dr-list3">
+            <div class="scrollbar2">
+              <div tabindex="0" class="drink3">
+                <img src="img/original_cola.png" alt="오리지널 콜라" />
+                <p class="dr-name">Original_Cola</p>
+                <p class="count">1</p>
+              </div>
+              <div tabindex="0" class="drink3">
+                <img src="img/green_cola.png" alt="녹색 콜라" />
+                <p class="dr-name">Green_Cola</p>
+                <p class="count">2</p>
+              </div>
+              <div tabindex="0" class="drink3">
+                <img src="img/orange_cola.png" alt="주황색 콜라" />
+                <p class="dr-name">Orange_Cola</p>
+                <p class="count">1</p>
+              </div>
+              <div tabindex="0" class="drink3">
+                <img src="img/violet_cola.png" alt="보라색 콜라" />
+                <p class="dr-name">Violet_Cola</p>
+                <p class="count">5</p>
+              </div>
+            </div>
+          </div>
+          <p tabindex="0" class="total-amount">총금액 : 9,000원</p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
